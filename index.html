@@ -2,9 +2,10 @@
 <html lang="pl">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Załącznik nr 7 — Protokół weryfikacji końcowej pracy dyplomowej</title>
-<meta name="description" content="Sprawy dyplomowe. Wzory dokumentów i sprawozdania z wyjazdów studyjnych.">
+<meta name="description" content="Prace dyplomowe. Wzory dokumentów i sprawozdania z wyjazdów studyjnych.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,14 +17,7 @@
   --slab:"Roboto Slab",Rockwell,"Times New Roman",serif;
   --sans:"Inter",Arial,Helvetica,sans-serif;
   --drift:0;
-}
-:root:not([data-theme="light"]){
-  @media (prefers-color-scheme: dark){
-    --paper:#11181c; --bg:#0b1114; --ink:#dde5e9; --ink-soft:#9fb0b8; --rule:#26343b; --link:#5fb6d8; --granat:#004a68;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#11181c; --bg:#0b1114; --ink:#dde5e9; --ink-soft:#9fb0b8; --rule:#26343b; --link:#5fb6d8; --granat:#004a68;
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -46,6 +40,7 @@ nav.main ul{list-style:none;display:flex;flex-wrap:wrap;margin:0;padding:0}
 nav.main a{display:block;padding:11px 16px;color:#fff;text-decoration:none;font-size:14.5px;font-weight:500}
 nav.main a:hover,nav.main a:focus-visible{background:#00293b}
 nav.main li.current a{background:var(--cegla)}
+nav.main li[data-nav] a{font-weight:700}
 
 .ticker{background:#fdf2d8;border-bottom:1px solid #e6d29a;color:#5c4408;font-size:13.5px}
 .ticker .wrap{padding-top:8px;padding-bottom:8px}
@@ -79,12 +74,10 @@ ol.legal li{counter-increment:pt;position:relative;padding-left:34px;margin-bott
 ol.legal li::before{content:counter(pt) ".";position:absolute;left:0;top:0;color:var(--srebro);font-variant-numeric:tabular-nums}
 sup.fn{color:var(--cegla);font-weight:600;cursor:help}
 .note{background:#f4f7f9;border-left:3px solid var(--srebro);padding:12px 16px;font-size:14.5px;color:var(--ink-soft);margin:20px 0;max-width:74ch}
-:root[data-theme="dark"] .note{background:#16222a}
 
 table.dane{width:100%;border-collapse:collapse;font-size:14.5px;margin:18px 0 6px}
 table.dane th,table.dane td{border:1px solid var(--rule);padding:8px 11px;text-align:left;vertical-align:top}
 table.dane th{background:#f4f7f9;font-weight:600;width:38%;color:var(--ink)}
-:root[data-theme="dark"] table.dane th{background:#16222a}
 table.dane td.num{text-align:right;font-variant-numeric:tabular-nums}
 table.dane tr.alarm td{color:var(--cegla);font-weight:600}
 
@@ -109,7 +102,6 @@ a.cta:hover{background:#a8351d}
 /* galeria */
 .galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:18px 0 6px}
 .slot{border:1px solid var(--rule);background:#f4f7f9;position:relative}
-:root[data-theme="dark"] .slot{background:#16222a}
 .slot .ph{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:14px;font-size:12px;color:var(--srebro);border:1px dashed var(--rule);margin:8px}
 .slot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
 .slot.brak img{display:none}
@@ -117,19 +109,6 @@ a.cta:hover{background:#a8351d}
 .slot .kod{display:block;font-family:var(--mono);font-size:10.5px;margin-top:6px;color:var(--srebro);word-break:break-all}
 .slot figcaption{padding:8px 10px 10px;font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--rule)}
 .wideo{border:1px solid var(--rule);padding:18px 20px;margin:18px 0;background:#f4f7f9;font-size:14px;color:var(--ink-soft)}
-:root[data-theme="dark"] .wideo{background:#16222a}
-
-.assistant{position:fixed;right:16px;bottom:16px;width:290px;max-width:calc(100vw - 32px);background:var(--paper);border:1px solid var(--rule);box-shadow:0 10px 30px rgba(0,0,0,.22);font-size:13.5px;z-index:40;display:none}
-.assistant.on{display:block}
-.assistant .hd{background:var(--granat);color:#fff;padding:9px 12px;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:13px}
-.assistant .hd button{background:none;border:0;color:#fff;font-size:16px;cursor:pointer;line-height:1}
-.assistant .msgs{padding:12px;display:flex;flex-direction:column;gap:9px;max-height:210px;overflow:auto}
-.assistant .m{background:#eef3f6;padding:8px 11px;color:var(--ink)}
-:root[data-theme="dark"] .assistant .m{background:#1a252b}
-
-.cookie{position:fixed;left:0;right:0;bottom:0;background:var(--granat-dark);color:#e7f1f6;padding:14px 20px;font-size:13.5px;z-index:50;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;text-align:center}
-.cookie button{background:var(--cegla);color:#fff;border:0;padding:8px 18px;font-weight:600;cursor:pointer;font-family:var(--sans);font-size:13.5px}
-.cookie.hidden{display:none}
 
 footer.site{background:var(--granat-dark);color:#bcd5e0;font-size:13.5px;padding:34px 0}
 footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
@@ -168,7 +147,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 
 <header class="site">
   <div class="wrap">
-    <img src="logopp.jpg" alt="Logo Politechniki Poznańskiej" class="mark" id="mark">
+    <div class="mark" id="mark">PP</div>
     <div class="wordmark">Politechnika Poznańska<span>Wydział Inżynierii Zarządzania</span></div>
   </div>
 </header>
@@ -177,7 +156,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   <div class="wrap">
     <ul>
       <li><a href="#">Uczelnia</a></li>
-      <li data-nav="dokument"><a href="#/dokument">Sprawy dyplomowe</a></li>
+      <li data-nav="dokument"><a href="#/dokument">Prace dyplomowe</a></li>
       <li data-nav="lodz"><a href="#/lodz">Wyjazdy studyjne</a></li>
       <li><a href="#">Nauka</a></li>
       <li><a href="#">Współpraca</a></li>
@@ -239,7 +218,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <!-- ============ WIDOK 1: ZAŁĄCZNIK NR 7 ============ -->
 <section class="view" id="view-dokument">
 <div class="wrap crumbs">
-  <a href="#">Strona główna</a> › <a href="#">Studenci</a> › <a href="#">Sprawy dyplomowe</a> › <a href="#">Wzory dokumentów</a> › Załącznik nr 7
+  <a href="#">Strona główna</a> › <a href="#">Studenci</a> › <a href="#">Prace dyplomowe</a> › <a href="#">Wzory dokumentów</a> › Załącznik nr 7
 </div>
 <div class="wrap layout">
   <main>
@@ -303,7 +282,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
       <div class="filerow">
         <div class="ico">PDF</div>
         <div>
-          <div style="color:var(--ink);font-weight:600">zalacznik_07_protokol_weryfikacji_KONCOWA_v4_FINAL_ost.pdf</div>
+          <div style="color:var(--ink);font-weight:600">zalacznik_07_JTCNW_final</div>
           <div>2,3 MB · zaktualizowano dziś · <span id="mime" data-s3="application/pdf (prawdopodobnie)">application/pdf</span></div>
         </div>
       </div>
@@ -459,7 +438,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   <div class="wrap">
     <div class="cols">
       <div><h4>Politechnika Poznańska</h4>pl. Marii Skłodowskiej-Curie 5<br>60-965 Poznań</div>
-      <div><h4>Dla studentów</h4><a href="#">Regulamin studiów</a><br><a href="#/dokument">Sprawy dyplomowe</a><br><a href="#/lodz">Wyjazdy studyjne</a></div>
+      <div><h4>Dla studentów</h4><a href="#">Regulamin studiów</a><br><a href="#/dokument">Prace dyplomowe</a><br><a href="#/lodz">Wyjazdy studyjne</a></div>
       <div><h4>Serwisy</h4><a href="#">eKursy</a><br><a href="#">Biblioteka</a><br><a href="#">Archiwum prac</a></div>
       <div><h4>Rejestr zmian</h4><span id="rejestr" data-s3="Ostatni wpis: 14.09.1974 (wpis wcześniejszy niż dokument)">Ostatni wpis: 14.09.2026</span></div>
     </div>
@@ -468,16 +447,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
   </div>
 </footer>
-
-<div class="assistant" id="asystent">
-  <div class="hd"><span>Wirtualny asystent PP</span><button id="zamknij" aria-label="Zamknij">×</button></div>
-  <div class="msgs" id="msgs"></div>
-</div>
-
-<div class="cookie hidden" id="cookie">
-  <span id="cookietext">Ten serwis używa plików cookies w celach statystycznych.</span>
-  <button id="cookieok">Akceptuję</button>
-</div>
 
 <script>
 (function(){
@@ -511,11 +480,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     3: [['[03:47:02] zalacznik_07.pdf: plik istnieje, ale nie w tym katalogu','warn'],['[03:47:02] zalacznik_07.pdf: plik istnieje, ale nie w tym roku','bad']],
     4: [['[03:47:44] archiwum: rozpoczęto przechowywanie użytkownika','bad']]
   };
-  var CZAT = {
-    dokument: {2:['Dzień dobry. W czym mogę pomóc?'],3:['Widzę, że przewinął Pan do § 4. To nie było konieczne.'],4:['Pobranie załącznika jest dobrowolne. Odmowa również zostanie odnotowana.']},
-    lodz: {2:['Dzień dobry. Widzę wyjazd nierozliczony.'],3:['Rozdział czwarty wymaga omówienia. Nie z Panem.'],4:['Dziękujemy za sprawozdanie. Zostanie ono z nami na dłużej niż Pan.']}
-  };
-
   function render(){
     var st = stages[current];
     var view = el('view-' + current);
@@ -539,22 +503,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
       term.scrollTop = term.scrollHeight;
     }
 
-    var msgs = el('msgs'), any = false;
-    msgs.innerHTML = '';
-    for (var j = 0; j <= st; j++){
-      ((CZAT[current] || {})[j] || []).forEach(function(t){
-        any = true;
-        var d = document.createElement('div');
-        d.className = 'm';
-        d.textContent = t;
-        msgs.appendChild(d);
-      });
-    }
-    el('asystent').classList.toggle('on', any);
-    if (st >= 2 && el('cookie').dataset.pokazano !== '1'){
-      el('cookie').dataset.pokazano = '1';
-      el('cookie').classList.remove('hidden');
-    }
   }
 
   function apply(n, st){
@@ -590,7 +538,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     });
     doc.style.setProperty('--drift', 0);
     window.scrollTo(0, 0);
-    el('asystent').classList.remove('on');
     seen = false;
     resetBar();
     render();
@@ -633,39 +580,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     });
   });
 
-  /* ---- cookies ---- */
-  var ciasteczka = [
-    'Ten serwis używa plików cookies w celach statystycznych.',
-    'Ten serwis nadal używa plików cookies. Poprzednia zgoda wygasła 4 sekundy temu.',
-    'Prosimy o ponowne wyrażenie zgody. To ostatni raz.',
-    'To nie był ostatni raz.'
-  ];
-  var ci = 0;
-  el('cookieok').addEventListener('click', function(){
-    el('cookie').classList.add('hidden');
-    ci++;
-    if (ci < ciasteczka.length){
-      setTimeout(function(){
-        el('cookietext').textContent = ciasteczka[ci];
-        el('cookie').classList.remove('hidden');
-      }, 2600 + ci * 1200);
-    }
-  });
-
-  el('zamknij').addEventListener('click', function(){
-    el('asystent').classList.remove('on');
-    setTimeout(function(){
-      el('asystent').classList.add('on');
-      var d = document.createElement('div');
-      d.className = 'm';
-      d.textContent = 'Rozmowa została zakończona. Wznawiam rozmowę.';
-      el('msgs').appendChild(d);
-    }, 4000);
-  });
-
   el('kontrast').addEventListener('click', function(e){
     e.preventDefault();
-    doc.setAttribute('data-theme', doc.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    this.textContent = 'Kontrast (w przygotowaniu od 2011 r.)';
   });
 
   /* ---- pobranie ---- */
