@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Załącznik nr 7 — Protokół weryfikacji końcowej pracy dyplomowej</title>
+<meta name="description" content="Sprawy dyplomowe. Wzory dokumentów i sprawozdania z wyjazdów studyjnych.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --granat:#00587c; --granat-dark:#003f59; --cegla:#c8452a; --srebro:#8a8d8f;
+  --paper:#ffffff; --bg:#eef1f3; --ink:#1c2a31; --ink-soft:#4a5a63; --rule:#d5dde1; --link:#00587c;
+  --mono:ui-monospace,"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  --slab:"Roboto Slab",Rockwell,"Times New Roman",serif;
+  --sans:"Inter",Arial,Helvetica,sans-serif;
+  --drift:0;
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --paper:#11181c; --bg:#0b1114; --ink:#dde5e9; --ink-soft:#9fb0b8; --rule:#26343b; --link:#5fb6d8; --granat:#004a68;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#11181c; --bg:#0b1114; --ink:#dde5e9; --ink-soft:#9fb0b8; --rule:#26343b; --link:#5fb6d8; --granat:#004a68;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.62;-webkit-text-size-adjust:100%}
+
+.wrap{max-width:1080px;margin:0 auto;padding-left:20px;padding-right:20px}
+.utility{background:var(--granat-dark);color:#cfe3ec;font-size:12.5px}
+.utility .wrap{display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:6px 0}
+.utility a{color:#cfe3ec;text-decoration:none}
+.utility a:hover{text-decoration:underline}
+.utility .spacer{margin-left:auto}
+
+header.site{background:var(--granat);color:#fff;transform:skewY(calc(var(--drift) * -0.12deg))}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:20px;padding-bottom:20px}
+.mark{width:56px;height:56px;flex:0 0 56px;border:3px solid #fff;border-radius:50%;display:grid;place-items:center;font-family:var(--slab);font-weight:700;font-size:20px;letter-spacing:-1px}
+.wordmark{font-family:var(--slab);font-weight:700;font-size:23px;line-height:1.1;letter-spacing:.5px}
+.wordmark span{display:block;font-family:var(--sans);font-weight:400;font-size:13px;letter-spacing:2.2px;color:#bcd9e6;margin-top:4px}
+nav.main{background:var(--granat-dark)}
+nav.main ul{list-style:none;display:flex;flex-wrap:wrap;margin:0;padding:0}
+nav.main a{display:block;padding:11px 16px;color:#fff;text-decoration:none;font-size:14.5px;font-weight:500}
+nav.main a:hover,nav.main a:focus-visible{background:#00293b}
+nav.main li.current a{background:var(--cegla)}
+
+.ticker{background:#fdf2d8;border-bottom:1px solid #e6d29a;color:#5c4408;font-size:13.5px}
+.ticker .wrap{padding-top:8px;padding-bottom:8px}
+
+figure.hero{margin:0;background:var(--paper);border-bottom:1px solid var(--rule)}
+figure.hero .frame{max-width:1080px;margin:0 auto;padding:0 20px}
+figure.hero svg{display:block;width:100%;height:auto;max-height:290px}
+figure.hero figcaption{max-width:1080px;margin:0 auto;padding:8px 20px 12px;font-size:12.5px;color:var(--ink-soft)}
+.okno-live{fill:var(--cegla)!important;opacity:1!important}
+
+.crumbs{font-size:13px;color:var(--ink-soft);padding-top:16px;padding-bottom:16px}
+.crumbs a{color:var(--ink-soft)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 296px;gap:26px;align-items:start;padding-bottom:40px}
+main{background:var(--paper);border:1px solid var(--rule);padding:34px 40px 46px;min-width:0}
+aside{display:flex;flex-direction:column;gap:18px}
+.box{background:var(--paper);border:1px solid var(--rule)}
+.box h3{margin:0;background:var(--granat);color:#fff;font-family:var(--slab);font-size:15px;font-weight:500;padding:9px 14px}
+.box .body{padding:13px 14px;font-size:14px;color:var(--ink-soft)}
+.box ul{margin:0;padding-left:17px}
+.box li{margin-bottom:7px}
+.box a{color:var(--link)}
+
+.docref{font-size:13px;color:var(--ink-soft);border-left:3px solid var(--cegla);padding-left:12px;margin-bottom:22px}
+h1{font-family:var(--slab);font-weight:700;font-size:31px;line-height:1.24;margin:0 0 10px;color:var(--ink);max-width:24ch;transform:translateX(calc(var(--drift) * 3px))}
+.meta{font-size:13px;color:var(--ink-soft);border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:26px}
+main p{max-width:74ch}
+h2{font-family:var(--slab);font-size:19px;font-weight:700;margin:34px 0 10px;color:var(--granat)}
+h3.sub{font-family:var(--slab);font-size:16px;font-weight:500;margin:22px 0 6px;color:var(--ink)}
+ol.legal{counter-reset:pt;list-style:none;padding:0;margin:0;max-width:74ch}
+ol.legal li{counter-increment:pt;position:relative;padding-left:34px;margin-bottom:9px}
+ol.legal li::before{content:counter(pt) ".";position:absolute;left:0;top:0;color:var(--srebro);font-variant-numeric:tabular-nums}
+sup.fn{color:var(--cegla);font-weight:600;cursor:help}
+.note{background:#f4f7f9;border-left:3px solid var(--srebro);padding:12px 16px;font-size:14.5px;color:var(--ink-soft);margin:20px 0;max-width:74ch}
+:root[data-theme="dark"] .note{background:#16222a}
+
+table.dane{width:100%;border-collapse:collapse;font-size:14.5px;margin:18px 0 6px}
+table.dane th,table.dane td{border:1px solid var(--rule);padding:8px 11px;text-align:left;vertical-align:top}
+table.dane th{background:#f4f7f9;font-weight:600;width:38%;color:var(--ink)}
+:root[data-theme="dark"] table.dane th{background:#16222a}
+table.dane td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.dane tr.alarm td{color:var(--cegla);font-weight:600}
+
+.terminal{background:#0d1418;color:#9fe6c0;font-family:var(--mono);font-size:12.5px;line-height:1.75;padding:16px 18px;margin:26px 0;overflow-x:auto;border:1px solid #1d2b31}
+.terminal .warn{color:#ffd166}
+.terminal .bad{color:#ff8b6b}
+.bar{height:18px;background:#e3e9ec;border:1px solid var(--rule);position:relative;max-width:420px;margin:10px 0 4px}
+.bar i{display:block;height:100%;background:var(--granat);width:0}
+.bar b{position:absolute;inset:0;display:grid;place-items:center;font-size:11.5px;font-weight:600;color:var(--ink)}
+
+.consent{border:1px solid var(--rule);padding:16px 18px;margin:26px 0;max-width:74ch}
+.consent label{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-soft);margin-bottom:10px;cursor:pointer}
+.consent input{margin-top:4px;accent-color:var(--cegla);flex:0 0 auto}
+
+.download{border:2px solid var(--cegla);padding:26px 28px;margin:34px 0 10px;background:var(--paper)}
+.download h2{margin-top:0}
+.filerow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:14px;color:var(--ink-soft);margin-bottom:18px}
+.filerow .ico{width:38px;height:46px;flex:0 0 38px;background:var(--cegla);color:#fff;font-family:var(--slab);font-size:11px;font-weight:700;display:grid;place-items:center;clip-path:polygon(0 0,72% 0,100% 22%,100% 100%,0 100%)}
+a.cta{display:inline-block;background:var(--cegla);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:13px 26px;border:0;cursor:pointer;font-family:var(--sans)}
+a.cta:hover{background:#a8351d}
+
+/* galeria */
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:18px 0 6px}
+.slot{border:1px solid var(--rule);background:#f4f7f9;position:relative}
+:root[data-theme="dark"] .slot{background:#16222a}
+.slot .ph{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:14px;font-size:12px;color:var(--srebro);border:1px dashed var(--rule);margin:8px}
+.slot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.slot.brak img{display:none}
+.slot:not(.brak) .ph{display:none}
+.slot .kod{display:block;font-family:var(--mono);font-size:10.5px;margin-top:6px;color:var(--srebro);word-break:break-all}
+.slot figcaption{padding:8px 10px 10px;font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--rule)}
+.wideo{border:1px solid var(--rule);padding:18px 20px;margin:18px 0;background:#f4f7f9;font-size:14px;color:var(--ink-soft)}
+:root[data-theme="dark"] .wideo{background:#16222a}
+
+.assistant{position:fixed;right:16px;bottom:16px;width:290px;max-width:calc(100vw - 32px);background:var(--paper);border:1px solid var(--rule);box-shadow:0 10px 30px rgba(0,0,0,.22);font-size:13.5px;z-index:40;display:none}
+.assistant.on{display:block}
+.assistant .hd{background:var(--granat);color:#fff;padding:9px 12px;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:13px}
+.assistant .hd button{background:none;border:0;color:#fff;font-size:16px;cursor:pointer;line-height:1}
+.assistant .msgs{padding:12px;display:flex;flex-direction:column;gap:9px;max-height:210px;overflow:auto}
+.assistant .m{background:#eef3f6;padding:8px 11px;color:var(--ink)}
+:root[data-theme="dark"] .assistant .m{background:#1a252b}
+
+.cookie{position:fixed;left:0;right:0;bottom:0;background:var(--granat-dark);color:#e7f1f6;padding:14px 20px;font-size:13.5px;z-index:50;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;text-align:center}
+.cookie button{background:var(--cegla);color:#fff;border:0;padding:8px 18px;font-weight:600;cursor:pointer;font-family:var(--sans);font-size:13.5px}
+.cookie.hidden{display:none}
+
+footer.site{background:var(--granat-dark);color:#bcd5e0;font-size:13.5px;padding:34px 0}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+footer.site h4{font-family:var(--slab);color:#fff;font-size:14px;margin:0 0 8px;font-weight:500}
+footer.site a{color:#bcd5e0}
+.disclaimer{border-top:1px solid #0d4d6b;margin-top:26px;padding-top:16px;font-size:11.5px;color:#7fa3b3;line-height:1.7}
+
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--cegla);outline-offset:2px}
+.glitch{animation:tw .18s steps(2) infinite}
+@keyframes tw{0%{transform:translateX(0)}50%{transform:translateX(1.5px)}100%{transform:translateX(0)}}
+.view{display:none}
+.view.active{display:block}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  header.site,h1{transform:none}
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  main{padding:24px 20px 34px}
+  h1{font-size:25px}
+  header.site .wrap{padding-top:14px;padding-bottom:14px}
+  .utility .spacer{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<div class="utility">
+  <div class="wrap">
+    <a href="#">BIP</a><a href="#">Poczta</a><a href="#">eKursy</a><a href="#">eProdziekan</a>
+    <span class="spacer"></span>
+    <a href="#">Deutsch</a><a href="#">English</a><a href="#" id="kontrast">Kontrast</a><a href="#">A A+ A++</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="mark" id="mark">PP</div>
+    <div class="wordmark">Politechnika Poznańska<span>Wydział Inżynierii Zarządzania</span></div>
+  </div>
+</header>
+
+<nav class="main">
+  <div class="wrap">
+    <ul>
+      <li><a href="#">Uczelnia</a></li>
+      <li data-nav="dokument"><a href="#/dokument">Sprawy dyplomowe</a></li>
+      <li data-nav="lodz"><a href="#/lodz">Wyjazdy studyjne</a></li>
+      <li><a href="#">Nauka</a></li>
+      <li><a href="#">Współpraca</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="ticker">
+  <div class="wrap"><b>Komunikat:</b> <span id="komunikat"
+    data-s1="Dziekanat będzie nieczynny w dniu 18 września oraz we wszystkie dni następne."
+    data-s3="Prosimy o nieopuszczanie strony do czasu zakończenia procedury."
+    data-s4="Dziękujemy za 50 lat wspólnej pracy. Do zobaczenia w 2076 r.">Dziekanat będzie nieczynny w dniu 18 września z powodu szkolenia pracowników.</span></div>
+</div>
+
+<figure class="hero">
+  <div class="frame">
+    <svg viewBox="0 0 1200 300" role="img" aria-label="Ilustracja budynku wydziału">
+      <defs>
+        <pattern id="okna" width="38" height="28" patternUnits="userSpaceOnUse">
+          <rect x="7" y="7" width="20" height="13" fill="#ffffff" opacity="0.26"/>
+        </pattern>
+        <linearGradient id="niebo" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="var(--granat)" stop-opacity="0.16"/>
+          <stop offset="100%" stop-color="var(--granat)" stop-opacity="0.04"/>
+        </linearGradient>
+        <clipPath id="clipA"><rect x="150" y="96" width="560" height="152"/></clipPath>
+        <clipPath id="clipB"><rect x="748" y="48" width="150" height="200"/></clipPath>
+      </defs>
+      <rect width="1200" height="300" fill="url(#niebo)"/>
+      <rect y="248" width="1200" height="52" fill="var(--srebro)" opacity="0.28"/>
+      <path d="M0 248 H1200" stroke="var(--srebro)" stroke-width="1.2" opacity="0.6"/>
+      <rect x="150" y="96" width="560" height="152" fill="var(--granat)"/>
+      <rect x="150" y="96" width="560" height="152" fill="url(#okna)" clip-path="url(#clipA)"/>
+      <rect x="150" y="88" width="560" height="10" fill="var(--granat-dark)"/>
+      <rect x="392" y="188" width="86" height="60" fill="var(--granat-dark)"/>
+      <rect x="372" y="180" width="126" height="9" fill="var(--cegla)"/>
+      <rect x="748" y="48" width="150" height="200" fill="var(--granat-dark)"/>
+      <rect x="748" y="48" width="150" height="200" fill="url(#okna)" clip-path="url(#clipB)"/>
+      <rect x="812" y="14" width="4" height="36" fill="var(--srebro)"/>
+      <path d="M816 16 L862 26 L816 36 Z" fill="var(--cegla)"/>
+      <rect id="okno-live" x="855" y="139" width="20" height="13" fill="#ffffff" opacity="0.26"/>
+      <rect x="944" y="168" width="176" height="80" fill="var(--granat)" opacity="0.72"/>
+      <rect x="960" y="186" width="144" height="8" fill="#ffffff" opacity="0.3"/>
+      <rect x="960" y="206" width="144" height="8" fill="#ffffff" opacity="0.3"/>
+      <circle cx="90" cy="214" r="34" fill="var(--granat)" opacity="0.42"/>
+      <rect x="86" y="214" width="7" height="34" fill="var(--srebro)" opacity="0.8"/>
+      <circle cx="722" cy="224" r="24" fill="var(--granat)" opacity="0.34"/>
+      <rect x="719" y="224" width="6" height="24" fill="var(--srebro)" opacity="0.8"/>
+      <path d="M236 268 H1010 M300 284 H946" stroke="var(--srebro)" stroke-width="1.4" opacity="0.55"/>
+    </svg>
+  </div>
+  <figcaption id="podpis"
+    data-s1="Budynek wydziału, wejście główne od strony placu. fot. Archiwum Uczelni (autor nieustalony)"
+    data-s3="Budynek wydziału, wejście główne. fot. wykonano jutro. W wieży pali się światło."
+    data-s4="Zdjęcie usunięto na wniosek budynku.">Budynek wydziału, wejście główne od strony placu. fot. Archiwum Uczelni</figcaption>
+</figure>
+
+<!-- ============ WIDOK 1: ZAŁĄCZNIK NR 7 ============ -->
+<section class="view" id="view-dokument">
+<div class="wrap crumbs">
+  <a href="#">Strona główna</a> › <a href="#">Studenci</a> › <a href="#">Sprawy dyplomowe</a> › <a href="#">Wzory dokumentów</a> › Załącznik nr 7
+</div>
+<div class="wrap layout">
+  <main>
+    <div class="docref">Załącznik nr 7 do Zarządzenia nr 41/2026 Rektora Politechniki Poznańskiej z dnia 3 lutego 2026 r.</div>
+    <h1>Protokół weryfikacji końcowej pracy dyplomowej</h1>
+    <div class="meta">Opublikowano: 3 lutego 2026 · Ostatnia aktualizacja: <span id="aktual" data-s3="14 września 1974, 03:47">14 września 2026, 08:12</span> · Odsłon: <span id="odslony" data-s1="2 118 → 1">2 118</span></div>
+
+    <p>Poniższy dokument określa tryb postępowania przy weryfikacji pracy dyplomowej magisterskiej przed dopuszczeniem jej do obrony. Protokół wypełnia promotor w porozumieniu z dyplomantem i składa w dziekanacie właściwego wydziału.</p>
+
+    <h2>§ 1. Postanowienia ogólne</h2>
+    <ol class="legal">
+      <li>Protokół stosuje się do prac dyplomowych magisterskich bronionych na studiach stacjonarnych i niestacjonarnych drugiego stopnia.</li>
+      <li>Dokument należy złożyć nie później niż 14 dni przed wyznaczonym terminem obrony.</li>
+      <li>Protokół sporządza się w dwóch jednobrzmiących egzemplarzach: dla archiwum uczelni oraz dla promotora.</li>
+      <li>W sprawach nieuregulowanych niniejszym załącznikiem stosuje się przepisy Regulaminu studiów.</li>
+    </ol>
+
+    <h2>§ 2. Zakres weryfikacji</h2>
+    <ol class="legal">
+      <li>Zgodność tematu pracy z zatwierdzoną kartą pracy dyplomowej.</li>
+      <li>Wynik badania w Jednolitym Systemie Antyplagiatowym.</li>
+      <li>Kompletność bibliografii oraz poprawność przypisów.</li>
+      <li>Objętość pracy, przy czym liczba stron nie może być liczbą pierwszą.<sup class="fn" title="Uzasadnienie w aktach sprawy.">1</sup></li>
+      <li>Bibliografia powinna zawierać nie mniej niż 30 pozycji, z czego co najmniej jedna musi zostać przeczytana.</li>
+      <li>Praca nie może zawierać zdań, które promotor rozumie za pierwszym razem.</li>
+    </ol>
+
+    <div class="note">Uwaga: formularz w wersji edytowalnej dostępny jest wyłącznie w panelu eProdziekan. Wersja PDF ma charakter poglądowy i nie stanowi dokumentu w rozumieniu przepisów.</div>
+
+    <h2>§ 3. Obowiązki dyplomanta</h2>
+    <ol class="legal">
+      <li>Dyplomant zobowiązany jest stawić się na obronie osobiście, w stroju stosownym do okoliczności.</li>
+      <li>Dyplomant przedkłada komisji egzemplarz archiwalny pracy w oprawie miękkiej.</li>
+      <li>Nie zaleca się nawiązywania kontaktu wzrokowego z egzemplarzem archiwalnym.<sup class="fn" title="Patrz: § 4 ust. 2.">2</sup></li>
+      <li>W przypadku gdy praca zacznie odpowiadać, należy niezwłocznie powiadomić dziekanat oraz Dział Obsługi i Eksploatacji.</li>
+      <li>Dyplomant nie odpowiada za treści, które pojawiły się w pracy po jej wydrukowaniu.</li>
+    </ol>
+
+    <h2>§ 4. Przechowywanie dokumentacji</h2>
+    <ol class="legal">
+      <li>Praca dyplomowa przechowywana jest w archiwum uczelni przez okres 50 lat.</li>
+      <li>Po upływie terminu, o którym mowa w ust. 1, praca przechowuje dyplomanta.</li>
+      <li>Okresu, o którym mowa w ust. 1, nie skraca się na wniosek stron ani na wniosek pracy.</li>
+    </ol>
+
+    <h2>Weryfikacja statusu dokumentu</h2>
+    <p>System sprawdza aktualność załącznika w rejestrze aktów wewnętrznych. Proszę nie zamykać karty przeglądarki.</p>
+    <div class="bar" role="progressbar" aria-label="Postęp weryfikacji"><i id="fill"></i><b id="pct">0%</b></div>
+    <div style="font-size:12.5px;color:var(--ink-soft)" id="barnote">Łączenie z rejestrem…</div>
+
+    <div class="terminal" id="term" aria-live="polite"></div>
+
+    <div class="consent">
+      <label><input type="checkbox" id="c1"><span>Zapoznałem(-am) się z treścią § 1–3 i akceptuję ich brzmienie.</span></label>
+      <label><input type="checkbox" id="c2"><span>Przyjmuję do wiadomości, że § 4 ust. 2 nie podlega negocjacjom.</span></label>
+      <label><input type="checkbox" id="c3"><span>Wyrażam zgodę na przetwarzanie mojego wizerunku przez archiwum po 2076 r.</span></label>
+    </div>
+
+    <div class="download">
+      <h2>Załącznik nr 7 — plik do pobrania</h2>
+      <div class="filerow">
+        <div class="ico">PDF</div>
+        <div>
+          <div style="color:var(--ink);font-weight:600">zalacznik_07_protokol_weryfikacji_KONCOWA_v4_FINAL_ost.pdf</div>
+          <div>2,3 MB · zaktualizowano dziś · <span id="mime" data-s3="application/pdf (prawdopodobnie)">application/pdf</span></div>
+        </div>
+      </div>
+      <a class="cta" id="pobierz" href="https://www.youtube.com/watch?v=7Ca28NbX_dM" target="_blank" rel="noopener">Pobierz załącznik (PDF)</a>
+      <div style="font-size:12.5px;color:var(--ink-soft);margin-top:12px" id="dlnote" data-s4="Plik przygotowano dla Pana/Pani indywidualnie. Nie należy go udostępniać, ale można.">Do otwarcia pliku wymagana jest przeglądarka obsługująca dokumenty.</div>
+    </div>
+
+    <div style="font-size:12.5px;color:var(--ink-soft);border-top:1px solid var(--rule);padding-top:14px;margin-top:30px;max-width:74ch">
+      <p style="margin:0 0 6px"><sup class="fn">1</sup> Zgodnie ze stanowiskiem Senatu z dnia 31 lutego.</p>
+      <p style="margin:0 0 6px"><sup class="fn">2</sup> Przypis wycofany. Treść przypisu pozostaje.</p>
+      <p style="margin:0"><sup class="fn">3</sup> Brak przypisu nr 3 w oryginale. Proszę go sobie wyobrazić.</p>
+    </div>
+  </main>
+
+  <aside>
+    <div class="box">
+      <h3>Pliki do pobrania</h3>
+      <div class="body">
+        <ul>
+          <li><a href="#">Karta pracy dyplomowej (DOCX)</a></li>
+          <li><a href="#">Oświadczenie o samodzielności (PDF)</a></li>
+          <li><a href="#">Wniosek o przedłużenie terminu (PDF)</a></li>
+          <li><a href="#" id="plik4" data-s2="Wniosek o skrócenie terminu (odrzucony, ponownie)">Wniosek o skrócenie terminu (odrzucony)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Dziekanat — godziny przyjęć</h3>
+      <div class="body" id="godziny" data-s2="poniedziałek — nieczynne<br>wtorek — nieczynne<br>środa — nieczynne<br>czwartek — 03:00–03:07<br>piątek — zależy">
+        poniedziałek — nieczynne<br>wtorek — 10:00–13:00<br>środa — 10:00–13:00<br>czwartek — nieczynne<br>piątek — 10:00–12:00
+      </div>
+    </div>
+    <div class="box">
+      <h3>Kontakt</h3>
+      <div class="body">
+        pl. Marii Skłodowskiej-Curie 5<br>60-965 Poznań<br>tel. +48 61 000 00 00<br><a href="#">dziekanat@example.edu</a>
+      </div>
+    </div>
+  </aside>
+</div>
+</section>
+
+<!-- ============ WIDOK 2: WYJAZD — ŁÓDŹ ============ -->
+<section class="view" id="view-lodz">
+<div class="wrap crumbs">
+  <a href="#">Strona główna</a> › <a href="#">Studenci</a> › <a href="#/lodz">Wyjazdy studyjne</a> › Łódź 2026
+</div>
+<div class="wrap layout">
+  <main>
+    <div class="docref">Załącznik nr 12 do Zarządzenia nr 41/2026 Rektora Politechniki Poznańskiej — sprawozdanie z wyjazdu</div>
+    <h1>Sprawozdanie z wyjazdu studyjnego — Łódź</h1>
+    <div class="meta">Złożono: 4 dni po terminie · Status: <span id="statusL" data-s2="przyjęto warunkowo" data-s4="przyjęto entuzjastycznie, wbrew procedurze">przyjęto</span> · Rozliczenie: we własnym zakresie</div>
+
+    <p>Sprawozdanie sporządzono na podstawie § 9 Regulaminu wyjazdów studyjnych. Celem wyjazdu była praca własna nad tekstem pracy dyplomowej w warunkach odmiennych od dotychczasowego miejsca jej pisania.</p>
+
+    <table class="dane">
+      <tr><th>Miejsce</th><td>Łódź</td></tr>
+      <tr><th>Uczestnicy</th><td id="uczestnicy" data-s2="1 osoba oraz laptop, który zaczął przejawiać własne stanowisko">1 osoba</td></tr>
+      <tr><th>Środek transportu</th><td>kolej</td></tr>
+      <tr><th>Cel wyjazdu</th><td>redakcja rozdziałów, ujednolicenie przypisów, praca nad wnioskami</td></tr>
+      <tr><th>Źródło finansowania</th><td id="finans" data-s3="środki własne, a pod koniec cudze">środki własne</td></tr>
+    </table>
+
+    <h2>§ 1. Przebieg wyjazdu</h2>
+    <h3 class="sub">Dzień pierwszy</h3>
+    <ol class="legal">
+      <li>Przyjazd, zakwaterowanie, rozłożenie materiałów źródłowych na dostępnej powierzchni.</li>
+      <li>Redakcja rozdziału trzeciego. Postęp zgodny z planem.</li>
+      <li>Spacer wzdłuż głównej ulicy w celu przewietrzenia myśli. Odległość oszacowano błędnie.</li>
+    </ol>
+    <h3 class="sub">Dzień drugi</h3>
+    <ol class="legal">
+      <li>Ujednolicenie przypisów. Wykryto trzy style cytowania w jednym dokumencie.</li>
+      <li>Praca w lokalu gastronomicznym. Uzyskano dostęp do gniazdka, co uznano za sukces organizacyjny.</li>
+      <li>Rozdział czwarty napisał się wieczorem. Autorstwo pozostaje przedmiotem ustaleń.<sup class="fn" title="Sprawa w toku.">1</sup></li>
+    </ol>
+    <h3 class="sub">Dzień trzeci</h3>
+    <ol class="legal">
+      <li>Weryfikacja postępów. Liczba stron wzrosła bardziej, niż wynikałoby z liczby przepracowanych godzin.</li>
+      <li>W pliku odnaleziono akapit, którego uczestnik nie rozpoznaje, lecz ocenia wysoko.</li>
+      <li>Wyjazd zakończono przed wyjaśnieniem powyższego.</li>
+    </ol>
+
+    <h2>§ 2. Wskaźniki realizacji celu</h2>
+    <table class="dane">
+      <tr><th>Wskaźnik</th><th style="width:20%">Plan</th><th style="width:20%">Wykonanie</th><th style="width:16%">%</th></tr>
+      <tr><td>Strony poddane redakcji</td><td class="num">40</td><td class="num">47</td><td class="num">117</td></tr>
+      <tr><td>Rozdziały domknięte</td><td class="num">2</td><td class="num">3</td><td class="num">150</td></tr>
+      <tr><td>Kawa (jednostki)</td><td class="num">4</td><td class="num">11</td><td class="num">275</td></tr>
+      <tr><td>Sen (godziny)</td><td class="num">24</td><td class="num">9</td><td class="num">37</td></tr>
+      <tr><td>Zwiedzanie (godziny)</td><td class="num">6</td><td class="num" id="zwiedz" data-s2="0,5">0,5</td><td class="num">8</td></tr>
+      <tr class="alarm"><td>Przejścia główną ulicą tam i z powrotem</td><td class="num">2</td><td class="num">14</td><td class="num">700</td></tr>
+    </table>
+    <div class="note" id="wskaznik" data-s3="Suma wskaźników przekracza zakres arkusza. Dział Kontroli uznał wyjazd za zrealizowany w stopniu wykraczającym poza przewidziany przez procedurę.">Wskaźniki obliczono metodą przyjętą przez uczestnika.</div>
+
+    <h2>§ 3. Dokumentacja fotograficzna</h2>
+    <p>Materiał ilustracyjny stanowi załącznik do sprawozdania. Zdjęcia wykonano w trakcie przerw w pracy nad tekstem.</p>
+
+    <!-- ZDJĘCIA: podmień src na swoje pliki, np. media/lodz-01.jpg -->
+    <div class="galeria">
+      <figure class="slot"><img src="media/lodz-01.jpg" alt="Zdjęcie z wyjazdu 1"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-01.jpg</span></div><figcaption data-s2="Miejsce pracy. Widok nieznacznie się różni od zapamiętanego.">Miejsce pracy, dzień pierwszy</figcaption></figure>
+      <figure class="slot"><img src="media/lodz-02.jpg" alt="Zdjęcie z wyjazdu 2"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-02.jpg</span></div><figcaption data-s2="Ulica główna, przejście siódme z czternastu.">Ulica główna</figcaption></figure>
+      <figure class="slot"><img src="media/lodz-03.jpg" alt="Zdjęcie z wyjazdu 3"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-03.jpg</span></div><figcaption data-s3="Gniazdko. Fotografia wykonana z wdzięczności.">Zaplecze techniczne</figcaption></figure>
+      <figure class="slot"><img src="media/lodz-04.jpg" alt="Zdjęcie z wyjazdu 4"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-04.jpg</span></div><figcaption data-s3="Ekran laptopa, godzina 02:14. Kursor stoi w miejscu, tekst przybywa.">Stanowisko pracy wieczorem</figcaption></figure>
+      <figure class="slot"><img src="media/lodz-05.jpg" alt="Zdjęcie z wyjazdu 5"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-05.jpg</span></div><figcaption data-s4="Na zdjęciu widoczna osoba, która nie brała udziału w wyjeździe.">Widok z okna</figcaption></figure>
+      <figure class="slot"><img src="media/lodz-06.jpg" alt="Zdjęcie z wyjazdu 6"><div class="ph">Zdjęcie oczekuje na zatwierdzenie<span class="kod">media/lodz-06.jpg</span></div><figcaption data-s4="Zdjęcie dołączone przez archiwum. Nie zostało wykonane przez uczestnika.">Powrót</figcaption></figure>
+    </div>
+
+    <h2>§ 4. Materiał wideo</h2>
+    <!-- WIDEO: wstaw link do swojego filmu w href poniżej -->
+    <div class="wideo" id="wideoBox" data-s3="Nagranie odtwarza się dłużej, niż trwało. Dział Dokumentacji nie wnosi uwag.">
+      Nagranie z wyjazdu przechowywane jest poza niniejszym serwisem, zgodnie z zasadą rozdzielenia dokumentu od dowodu.
+      <div style="margin-top:12px"><a class="cta" id="wideoLink" href="#" target="_blank" rel="noopener">Odtwórz nagranie</a></div>
+    </div>
+
+    <h2>§ 5. Wnioski</h2>
+    <ol class="legal">
+      <li>Cel wyjazdu został osiągnięty. Praca posunęła się dalej niż w analogicznym okresie w miejscu stałego pobytu.</li>
+      <li>Rekomenduje się powtórzenie wyjazdu przed kolejną pracą dyplomową, jeżeli taka nastąpi.</li>
+      <li id="w3" data-s4="Uczestnik wyraża zgodę na przechowywanie sprawozdania przez okres 50 lat oraz przyjmuje do wiadomości § 4 ust. 2 Załącznika nr 7.">Sprawozdanie przyjęto bez uwag.</li>
+    </ol>
+
+    <p style="margin-top:22px"><a href="#/dokument" style="color:var(--link)">← Powrót do Załącznika nr 7</a></p>
+  </main>
+
+  <aside>
+    <div class="box">
+      <h3>Dane wyjazdu</h3>
+      <div class="body">
+        <ul>
+          <li>Czas trwania: 3 dni</li>
+          <li>Rozliczenie: brak</li>
+          <li>Opiekun: brak</li>
+          <li id="op4" data-s3="Nadzór: sprawowany zdalnie, przez nikogo">Nadzór: nie dotyczy</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Powiązane dokumenty</h3>
+      <div class="body">
+        <ul>
+          <li><a href="#/dokument">Załącznik nr 7 — protokół weryfikacji</a></li>
+          <li><a href="#">Wniosek o zwrot kosztów (niezłożony)</a></li>
+          <li><a href="#">Regulamin wyjazdów studyjnych</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>Politechnika Poznańska</h4>pl. Marii Skłodowskiej-Curie 5<br>60-965 Poznań</div>
+      <div><h4>Dla studentów</h4><a href="#">Regulamin studiów</a><br><a href="#/dokument">Sprawy dyplomowe</a><br><a href="#/lodz">Wyjazdy studyjne</a></div>
+      <div><h4>Serwisy</h4><a href="#">eKursy</a><br><a href="#">Biblioteka</a><br><a href="#">Archiwum prac</a></div>
+      <div><h4>Rejestr zmian</h4><span id="rejestr" data-s3="Ostatni wpis: 14.09.1974 (wpis wcześniejszy niż dokument)">Ostatni wpis: 14.09.2026</span></div>
+    </div>
+    <div class="disclaimer">
+      Strona satyryczna, przygotowana jako żart do obrony pracy magisterskiej. Nie jest w żaden sposób powiązana z Politechniką Poznańską, nie stanowi jej oficjalnego serwisu ani nie zawiera jej znaku graficznego. Wszystkie zarządzenia, paragrafy, wskaźniki i numery telefonów są wymyślone. Zdjęcia z wyjazdu należą do autora strony.
+    </div>
+  </div>
+</footer>
+
+<div class="assistant" id="asystent">
+  <div class="hd"><span>Wirtualny asystent PP</span><button id="zamknij" aria-label="Zamknij">×</button></div>
+  <div class="msgs" id="msgs"></div>
+</div>
+
+<div class="cookie hidden" id="cookie">
+  <span id="cookietext">Ten serwis używa plików cookies w celach statystycznych.</span>
+  <button id="cookieok">Akceptuję</button>
+</div>
+
+<script>
+(function(){
+  /* ====== KONFIGURACJA — tu podmieniasz linki ====== */
+  var LINK_WIDEO = "https://www.youtube.com/watch?v=7Ca28NbX_dM"; // link do nagrania z wyjazdu
+  /* ================================================= */
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var doc = document.documentElement;
+  var el = function(id){ return document.getElementById(id); };
+  var current = 'dokument';
+  var stages = {dokument:0, lodz:0};
+
+  el('wideoLink').href = LINK_WIDEO;
+
+  /* brakujące zdjęcia -> ramka zastępcza */
+  Array.prototype.forEach.call(document.querySelectorAll('.slot img'), function(img){
+    img.addEventListener('error', function(){ img.closest('.slot').classList.add('brak'); });
+    if (img.complete && img.naturalWidth === 0) img.closest('.slot').classList.add('brak');
+  });
+
+  /* zapamiętanie treści wyjściowych */
+  Array.prototype.forEach.call(document.querySelectorAll('[data-s1],[data-s2],[data-s3],[data-s4]'), function(n){
+    n.setAttribute('data-s0', n.innerHTML);
+  });
+
+  var LOGI = {
+    0: [['[08:12:04] rejestr_aktow: połączono (protokół PP-WEB/2.1)',''],['[08:12:04] zalacznik_07.pdf: status AKTUALNY','']],
+    1: [['[08:12:19] weryfikacja podpisu elektronicznego: podpis nieczytelny, przyjęto','']],
+    2: [['[08:12:41] rejestr_aktow: rozbieżność dat (2026 ≠ 1974)','warn']],
+    3: [['[03:47:02] zalacznik_07.pdf: plik istnieje, ale nie w tym katalogu','warn'],['[03:47:02] zalacznik_07.pdf: plik istnieje, ale nie w tym roku','bad']],
+    4: [['[03:47:44] archiwum: rozpoczęto przechowywanie użytkownika','bad']]
+  };
+  var CZAT = {
+    dokument: {2:['Dzień dobry. W czym mogę pomóc?'],3:['Widzę, że przewinął Pan do § 4. To nie było konieczne.'],4:['Pobranie załącznika jest dobrowolne. Odmowa również zostanie odnotowana.']},
+    lodz: {2:['Dzień dobry. Widzę wyjazd nierozliczony.'],3:['Rozdział czwarty wymaga omówienia. Nie z Panem.'],4:['Dziękujemy za sprawozdanie. Zostanie ono z nami na dłużej niż Pan.']}
+  };
+
+  function render(){
+    var st = stages[current];
+    var view = el('view-' + current);
+    Array.prototype.forEach.call(view.querySelectorAll('[data-s0]'), function(n){ apply(n, st); });
+    ['komunikat','podpis','rejestr'].forEach(function(id){ apply(el(id), st); });
+
+    el('okno-live').classList.toggle('okno-live', st >= 3);
+    if (!reduce) el('mark').classList.toggle('glitch', st >= 3);
+
+    var term = el('term');
+    if (term){
+      term.innerHTML = '';
+      for (var i = 0; i <= st; i++){
+        (LOGI[i] || []).forEach(function(l){
+          var d = document.createElement('div');
+          if (l[1]) d.className = l[1];
+          d.textContent = l[0];
+          term.appendChild(d);
+        });
+      }
+      term.scrollTop = term.scrollHeight;
+    }
+
+    var msgs = el('msgs'), any = false;
+    msgs.innerHTML = '';
+    for (var j = 0; j <= st; j++){
+      ((CZAT[current] || {})[j] || []).forEach(function(t){
+        any = true;
+        var d = document.createElement('div');
+        d.className = 'm';
+        d.textContent = t;
+        msgs.appendChild(d);
+      });
+    }
+    el('asystent').classList.toggle('on', any);
+    if (st >= 2 && el('cookie').dataset.pokazano !== '1'){
+      el('cookie').dataset.pokazano = '1';
+      el('cookie').classList.remove('hidden');
+    }
+  }
+
+  function apply(n, st){
+    if (!n) return;
+    var t = n.getAttribute('data-s0');
+    if (t === null) return;
+    for (var i = 1; i <= st; i++){
+      var c = n.getAttribute('data-s' + i);
+      if (c !== null) t = c;
+    }
+    if (n.innerHTML !== t) n.innerHTML = t;
+  }
+
+  function onScroll(){
+    var max = document.body.scrollHeight - window.innerHeight;
+    var p = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+    doc.style.setProperty('--drift', (p * p * 4).toFixed(3));
+    var st = p > 0.86 ? 4 : p > 0.66 ? 3 : p > 0.42 ? 2 : p > 0.18 ? 1 : 0;
+    if (st > stages[current]){ stages[current] = st; render(); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---- routing ---- */
+  function show(name){
+    if (!el('view-' + name)) name = 'dokument';
+    current = name;
+    stages[name] = 0;
+    Array.prototype.forEach.call(document.querySelectorAll('.view'), function(v){
+      v.classList.toggle('active', v.id === 'view-' + name);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('nav.main li[data-nav]'), function(li){
+      li.classList.toggle('current', li.getAttribute('data-nav') === name);
+    });
+    doc.style.setProperty('--drift', 0);
+    window.scrollTo(0, 0);
+    el('asystent').classList.remove('on');
+    seen = false;
+    resetBar();
+    render();
+  }
+  function route(){ show((location.hash || '').replace('#/', '') || 'dokument'); }
+  window.addEventListener('hashchange', route);
+
+  /* ---- pasek weryfikacji ---- */
+  var seen = false, timer = null;
+  function resetBar(){
+    if (timer) clearInterval(timer);
+    var f = el('fill'), p = el('pct'), n = el('barnote');
+    if (f){ f.style.width = '0'; p.textContent = '0%'; n.textContent = 'Łączenie z rejestrem…'; }
+  }
+  var obs = new IntersectionObserver(function(en){
+    en.forEach(function(e){
+      if (!e.isIntersecting || seen || current !== 'dokument') return;
+      seen = true;
+      var v = 0, f = el('fill'), pc = el('pct'), nt = el('barnote');
+      timer = setInterval(function(){
+        v += Math.random() * 9 + 3;
+        if (v >= 147){ v = 147; clearInterval(timer); nt.textContent = 'Weryfikacja zakończona wynikiem przekraczającym zakres. Dokument uznaje się za bardziej aktualny niż rejestr.'; }
+        else if (v > 100){ nt.textContent = 'Weryfikacja trwa dłużej niż zwykle…'; }
+        f.style.width = Math.min(100, v) + '%';
+        pc.textContent = Math.round(v) + '%';
+      }, 260);
+    });
+  }, {threshold:0.6});
+  obs.observe(document.querySelector('.bar'));
+
+  /* ---- zgody ---- */
+  var teksty = [
+    'Przyjmuję do wiadomości, że zgoda jest dobrowolna i została już udzielona.',
+    'Oświadczam, że nie jestem pracą dyplomową.',
+    'Zgadzam się na warunki, których treść zostanie ustalona później.'
+  ];
+  ['c1','c2','c3'].forEach(function(id, i){
+    el(id).addEventListener('change', function(){
+      if (this.checked) this.parentNode.querySelector('span').textContent = teksty[i];
+    });
+  });
+
+  /* ---- cookies ---- */
+  var ciasteczka = [
+    'Ten serwis używa plików cookies w celach statystycznych.',
+    'Ten serwis nadal używa plików cookies. Poprzednia zgoda wygasła 4 sekundy temu.',
+    'Prosimy o ponowne wyrażenie zgody. To ostatni raz.',
+    'To nie był ostatni raz.'
+  ];
+  var ci = 0;
+  el('cookieok').addEventListener('click', function(){
+    el('cookie').classList.add('hidden');
+    ci++;
+    if (ci < ciasteczka.length){
+      setTimeout(function(){
+        el('cookietext').textContent = ciasteczka[ci];
+        el('cookie').classList.remove('hidden');
+      }, 2600 + ci * 1200);
+    }
+  });
+
+  el('zamknij').addEventListener('click', function(){
+    el('asystent').classList.remove('on');
+    setTimeout(function(){
+      el('asystent').classList.add('on');
+      var d = document.createElement('div');
+      d.className = 'm';
+      d.textContent = 'Rozmowa została zakończona. Wznawiam rozmowę.';
+      el('msgs').appendChild(d);
+    }, 4000);
+  });
+
+  el('kontrast').addEventListener('click', function(e){
+    e.preventDefault();
+    doc.setAttribute('data-theme', doc.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  /* ---- pobranie ---- */
+  var btn = el('pobierz'), busy = false;
+  btn.addEventListener('click', function(e){
+    if (busy || e.metaKey || e.ctrlKey || e.button === 1) return;
+    e.preventDefault();
+    busy = true;
+    var etapy = ['Przygotowywanie pliku…','Kompresowanie…','Dekompresowanie…','Konwersja do formatu wideo…'];
+    var i = 0;
+    var t = setInterval(function(){
+      btn.textContent = etapy[i]; i++;
+      if (i >= etapy.length){
+        clearInterval(t);
+        setTimeout(function(){ window.open(btn.href, '_blank', 'noopener'); btn.textContent = 'Pobierz załącznik (PDF)'; busy = false; }, 700);
+      }
+    }, 650);
+  });
+
+  route();
+})();
+</script>
+</body>
+</html>
