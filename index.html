@@ -412,7 +412,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   var current = 'dokument';
   var stages = {dokument:0, lodz:0};
 
-
+  if (el('wideoLink')) el('wideoLink').href = LINK_WIDEO;
+  
   /* brakujące zdjęcia -> ramka zastępcza */
   Array.prototype.forEach.call(document.querySelectorAll('.slot img'), function(img){
     img.addEventListener('error', function(){ img.closest('.slot').classList.add('brak'); });
