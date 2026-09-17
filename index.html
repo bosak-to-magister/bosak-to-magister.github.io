@@ -526,19 +526,28 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     this.textContent = 'Kontrast (w przygotowaniu od 2011 r.)';
   });
 
-  /* ---- pobranie ---- */
+/* ---- pobranie ---- */
   var btn = el('pobierz'), busy = false;
   btn.addEventListener('click', function(e){
     if (busy || e.metaKey || e.ctrlKey || e.button === 1) return;
     e.preventDefault();
     busy = true;
+    var newTab = window.open('about:blank', '_blank');
     var etapy = ['Przygotowywanie pliku…','Kompresowanie…','Dekompresowanie…','Konwersja do formatu wideo…'];
     var i = 0;
     var t = setInterval(function(){
       btn.textContent = etapy[i]; i++;
       if (i >= etapy.length){
         clearInterval(t);
-        setTimeout(function(){ window.open(btn.href, '_blank', 'noopener'); btn.textContent = 'Pobierz załącznik (PDF)'; busy = false; }, 700);
+        setTimeout(function(){ 
+          if (newTab) {
+            newTab.location.href = btn.href;
+          } else {
+            window.location.href = btn.href;
+          }
+          btn.textContent = 'Pobierz potwierdzenie (PDF)'; 
+          busy = false; 
+        }, 700);
       }
     }, 650);
   });
